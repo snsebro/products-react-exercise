@@ -6,7 +6,7 @@ Fork this repo.
 
 Build this:
 
-![](https://drive.google.com/file/d/1LFjztj5tBAOtvEx69SreLI0sSuECxfc7/view?usp=sharing)
+![](https://git.generalassemb.ly/bruno/assets/blob/master/products-react.gif)
 
 Here is the json data: 
 ```
