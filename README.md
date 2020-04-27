@@ -2,13 +2,15 @@
 
 # Products App
 
-1. Fork this repo.
+Fork this repo.
 
 Build this:
 
 ![](https://git.generalassemb.ly/bruno/assets/blob/master/products-react.gif)
 
 Search and sorting is **bonus**.
+
+##
 
 Here is the json data: 
 ```
@@ -163,9 +165,11 @@ Here is the json data:
   ]
 ```
 
-Pull Request when done.
+**Pull Request when done.**
 
 **Tips**
 
 - Create a Products component that imports the JSON data, maps through it and displays each product.
 - Create a ProductDetail component that shows a specific product.
+
+Your app should look like this when done: https://products-react.surge.sh
