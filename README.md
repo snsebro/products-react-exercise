@@ -85,7 +85,7 @@ Here is some sample data:
 
 **Tips**
 
-- Create a Products component that imports the JSON data, maps through it and displays each product.
+- Create a Products component that maps through the data and displays each product.
 - Create a ProductDetail component that shows a specific product.
 
 Your app should look like this when done: https://products-react.surge.sh
