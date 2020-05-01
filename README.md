@@ -8,7 +8,7 @@ Build this:
 
 ![](https://git.generalassemb.ly/bruno/assets/blob/master/products-react.gif)
 
-Search and sorting is **bonus**.
+Sorting is **bonus**.
 
 ##
 
