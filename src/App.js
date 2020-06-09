@@ -30,10 +30,43 @@ export default class App extends Component {
     }))
   }
 
+  stickyHeader = (header) => {
+
+  }
+
+  sortAlphabetically = () => {
+    let sortedProducts = products.sort( function( a, b ) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+      return console.log(a < b ? -1 : a > b ? 1 : 0)
+    });
+    
+    this.setState({products: sortedProducts})
+    
+  }
+
 
   render() {
     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(this.state.searchInput.toLowerCase())
     )  
+
+    const aZSortedProducts = products.sort( function( a, b ) {
+      a = a.price.toLowerCase();
+      b = b.price.toLowerCase();
+      return a < b ? -1 : a > b ? 1 : 0
+    
+    });
+
+    const zASortedProducts = products.sort( function( a, b ) {
+      a = a.price.toLowerCase();
+      b = b.price.toLowerCase();
+      return a < b ? 1 : a > b ? -1 : 0
+    
+    });
+    console.log(aZSortedProducts)
+    console.log(zASortedProducts)
+    console.log(this.state.products)
+
     return (
       <div className='layout'>
         <Route path='/'>
@@ -41,7 +74,7 @@ export default class App extends Component {
         </Route>
           <div className='layout-children'>
         <Route path='/' exact>
-          <ProductList products={filteredProducts} handleSearchChange={this.handleSearchChange}/>
+          <ProductList products={filteredProducts} sortAlphabetically={this.sortAlphabetically} handleSearchChange={this.handleSearchChange}/>
         </Route>
         <Route path='/product/:name/'>
           <ProductDetail setProduct={this.setProduct} product={this.state.product}/>

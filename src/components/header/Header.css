@@ -11,6 +11,21 @@
 
 .nav {
   display: flex;
+  width: 100%;
+  padding: 20px 0;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: -2px;
+  box-shadow: 1px 1px 1px 0.3px #cecece;
+  background-color: white;
+  position: fixed;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
   padding: 20px 0;
   margin-left: -2px;
   margin-right: -2px;

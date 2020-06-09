@@ -13,7 +13,7 @@ export default function ProductList(props) {
       <form className='sort-container'>
         <label htmlFor="sort">SORT BY:</label>
         <select className="sort">
-          <option className="option" value="name-ascending">&nbsp; Alphabetically, A-Z &nbsp;</option>
+          <option onSelect={props.sortAlphabetically} className="option" value="name-ascending">&nbsp; Alphabetically, A-Z &nbsp;</option>
           <option value="name-descending">&nbsp; Alphabetically, Z-A &nbsp;</option>
           <option value="price-ascending">&nbsp; Price, low to high &nbsp;</option>
           <option value="price-descending">&nbsp; Price, high to low &nbsp;</option>
@@ -24,7 +24,7 @@ export default function ProductList(props) {
           <Link className='product' to={'/product/' + product.name}  key={product.id}>
             <img className='product-image' src={product.imgURL} alt={product.name}></img>
             <div className='product-name'>{product.name}</div>
-            <div className='price'>{product.price}</div></Link>)}
+            <div className='price'>$ {product.price}</div></Link>)}
       </div>
     </div>
   )

@@ -66,6 +66,14 @@ select,label{
   margin: 20px;
 }
 
+.layout-children{
+  padding: 60px 0px;
+}
+
+/* .layout-children + .sticky {
+  padding-top: 60px;
+} */
+
 @media (max-width: 800px) {
    .product-image img {
       width: 80%;
