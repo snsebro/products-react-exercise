@@ -1,0 +1,19 @@
+.logo {
+  font-family: "Kalam",cursive;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: -3px;
+  flex: 1 1;
+  max-width: 30vw;
+  transition: all .25s;
+}
+
+.nav {
+  display: flex;
+  padding: 20px 0;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: -2px;
+  box-shadow: 1px 1px 1px 0.3px #cecece;
+}
